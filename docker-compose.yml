@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:4.91.1
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Bangkok
+      - PASSWORD=password
+      - HASHED_PASSWORD=
+      - SUDO_PASSWORD=password
+      - SUDO_PASSWORD_HASH=
+      - DEFAULT_WORKSPACE=/workspace
+    volumes:
+      - ./config:/config
+      - ./workspace:/workspace
+    ports:
+      - 8443:8443
+    restart: unless-stopped
