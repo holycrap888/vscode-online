@@ -1,4 +1,4 @@
 # vscode-online
-
-## init
+vscode online editor
+## Installation
 ```docker-compose up -d```
