@@ -13,11 +13,10 @@ bin-release/
 *.ipa
 *.apk
 
+# Ignore specific folders
+config/
+workspace/
+
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
-
-
-# ignore all floder
-./config
-./workspace
