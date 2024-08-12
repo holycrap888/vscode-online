@@ -32,10 +32,18 @@ zsh --version
 chsh -s /bin/zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
+## Install zsh plugin
+```
 nano ~/.zshrc
+# Example plugin autosuggestions and syntax highlighting
 
-# Add plugin in .zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+
+# Upate plugin in ~/.zshrc (any plugin this example)
 plugins=(git yarn npm docker docker-compose nvm z zsh-autosuggestions zsh-syntax-highlighting)
 
 #  Install powerline front
