@@ -19,7 +19,7 @@ nvm --version
 nvm install node
 
 # Install global yarn
-npm istall -g yarn
+npm install -g yarn
 ```
 
 ## Install zsh if need
